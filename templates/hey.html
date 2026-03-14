@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1># calendar-digital-ids-place</h1>
+{% for x in users | reverse %}
+ <li>{{ x["first_name"]  }}</li>
+
+{% endfor %} 
+{% endblock %}
+{% block liens %}<a href="/">bienvenue</a><a href="/add_one_place"> add one place</a><a href="/add_one_photo"> add one photo</a><a href="/add_one_article"> add one article</a>{% endblock %}
